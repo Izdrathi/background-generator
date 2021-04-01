@@ -1,8 +1,8 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.getElementById("gradient");
-var random = document.querySelector(".random");
+let css = document.querySelector("h3");
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+let body = document.getElementById("gradient");
+let random = document.querySelector(".random");
 
 function setGradient() {
 	body.style.background = 
@@ -16,10 +16,10 @@ function setGradient() {
 }
 
 function getRandomColor() {
-	var letters = '0123456789ABCDEF';
-	var color = '#';
-	for (var i = 0; i < 6; i++) {
-	  color += letters[Math.floor(Math.random() * 16)];
+	let letters = '0123456789ABCDEF';
+	let color = '#';
+	for (let i = 0; i < 6; i++) {
+	  color += letters[Math.floor(Math.random() * 17)];
 	}
 	return color;
   }
